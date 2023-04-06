@@ -11,49 +11,73 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <title>QR code component</title>
 
-    <title>Frontend Mentor | QR code component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       body {
-        background-color: #d7f7f1;
-        align-items: center;
-        justify-content: center;
+        background-color: hsl(212, 45%, 89%);
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        box-sizing: border-box;
       }
-      .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        height: 40px;
-        width: 20%;
-        border-radius: 5px;
-        background-color: aliceblue;
-      }
-
-      .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      }
-
       img {
-        border-radius: 5px;
+        width: 250px;
+        position: relative;
+        top: 20px;
+        border-radius: 5%;
       }
-
+      .heading {
+        padding-top: 40px;
+        font-size: 15px;
+        font-weight: 400;
+        width: 250px;
+        font-size: 20px;
+        margin: auto;
+        color: hsl(218, 44%, 22%);
+      }
+      .description {
+        padding: 20px;
+        color: hsl(220, 15%, 55%);
+        width: 250px;
+      }
       .container {
-        padding: 2px 16px;
-        background-color: aliceblue;
-        border-radius: 5px;
+        background-color: hsl(0, 0%, 100%);
+        width: 290px;
+        text-align: center;
+        align-items: center;
+        margin: 10% auto;
+        border-radius: 5%;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
   <body>
-    <div class="card">
-      <img src="./images/image-qr-code.png" alt="image-qr-code" style="width: 100%" />
-      <div class="container">
-        <h4><b>Improve your front-end skills by building projects</b></h4>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to next level
-        </p>
-      </div>
+    <div class="container">
+      <img class="qrcode" src="images/image-qr-code.png" alt="qrcode-img" />
+      <p class="heading">
+        <strong>Improve your front-end skills by building projects</strong>
+      </p>
+      <p class="description">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
     </div>
+
   </body>
 </html>
